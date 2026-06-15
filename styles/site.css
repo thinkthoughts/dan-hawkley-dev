@@ -71,6 +71,31 @@
       border-bottom: 1px solid var(--border);
       backdrop-filter: blur(14px);
     }
+      .brand {
+        display: flex;
+      
+        align-items: center;
+      
+        gap: 1rem;
+      }
+      
+      .avatar {
+        width: 72px;
+      
+        height: 72px;
+      
+        border-radius: 50%;
+      
+        object-fit: cover;
+      
+        flex-shrink: 0;
+      }
+      
+      .name {
+        margin: 0;
+      
+        line-height: 1.4;
+      }
 
     .header-inner,
     main,
