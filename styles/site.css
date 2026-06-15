@@ -73,28 +73,27 @@
     }
       .brand {
         display: flex;
-      
         align-items: center;
-      
         gap: 1rem;
+      }
+      
+      .brand-text {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .name,
+      .tagline {
+        margin: 0;
+        line-height: 1.25;
       }
       
       .avatar {
         width: 72px;
-      
         height: 72px;
-      
         border-radius: 50%;
-      
         object-fit: cover;
-      
         flex-shrink: 0;
-      }
-      
-      .name {
-        margin: 0;
-      
-        line-height: 1.4;
       }
 
     .header-inner,
@@ -110,24 +109,6 @@
       justify-content: space-between;
       gap: 1rem;
       padding: 1rem 0;
-    }
-
-    .brand {
-      display: flex;
-      flex-direction: column;
-      gap: 0.1rem;
-      text-decoration: none;
-      color: var(--text);
-    }
-
-    .brand strong {
-      font-size: 1.05rem;
-      letter-spacing: 0.02em;
-    }
-
-    .brand span {
-      color: var(--muted);
-      font-size: 0.9rem;
     }
 
     .nav-actions {
