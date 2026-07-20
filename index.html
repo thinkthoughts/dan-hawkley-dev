@@ -1,409 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Dan Hawkley</title>
 
   <meta
     name="description"
-    content="danhawkley.dev: Engineering statements with scientific intent."
-  />
- <link rel="stylesheet" href="styles/site.css" />
-  <!-- MathJax -->
-  <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']]
-      }
-    };
-  </script>
-  <script
-    defer
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
+    content="Recent engineering objects, statements, repositories, and reports by Dan Hawkley."
+  >
+
+  <link rel="stylesheet" href="/styles/site.css">
+  <link rel="stylesheet" href="/styles/news.css">
+
+  <script defer src="/js/site-builder.js"></script>
 </head>
 
 <body>
   <header class="site-header">
-  <div class="header-inner">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="avatar-links" aria-label="Featured links">
+          <a href="https://climatereality.app" aria-label="Climate Reality">
+            <img
+              src="/images/avatar3.jpg"
+              alt="Grandma Physics"
+              class="avatar"
+            >
+          </a>
 
-   <div class="brand">
-      <a href="https://climatereality.app"><img
-        src="/images/avatar3.jpg"
-        alt="Grandma Physics"
-        class="avatar"
-      ></a> 
-      <a href="htttps://danhawkley.dev"><img
-        src="/images/avatar.jpg"
-        alt="Dan Hawkley near Boulder"
-        class="avatar"
-      ></a>
-      <a href="/style.html">
-        <img
-        src="/images/avatar2.jpg"
-        alt="Landyachtz"
-        class="avatar"
-      ></a>
-    
-      <div class="brand-text">
-        <p class="name"><strong>Dan Hawkley</strong></p>
-        <p class="tagline">Engineering statements with scientific intent.</p>
+          <a href="https://danhawkley.dev" aria-label="Dan Hawkley home">
+            <img
+              src="/images/avatar.jpg"
+              alt="Dan Hawkley near Boulder"
+              class="avatar"
+            >
+          </a>
+
+          <a href="/style.html" aria-label="Style and studio">
+            <img
+              src="/images/avatar2.jpg"
+              alt="Landyachtz"
+              class="avatar"
+            >
+          </a>
+        </div>
+
+        <div class="brand-text">
+          <p class="name"><strong>Dan Hawkley</strong></p>
+          <p class="tagline">Engineering statements with scientific intent.</p>
+        </div>
       </div>
-    </div>
-
-    <div class="nav-actions">
-<!--
-      <nav aria-label="Main navigation">
-        <a href="/style.html">Style</a>
-      </nav>
-      -->
 
       <button
         id="theme-toggle"
+        class="theme-toggle"
         type="button"
-        aria-label="Toggle dark mode">
+        aria-label="Toggle dark mode"
+        aria-pressed="false"
+      >
         🌙 Dark
       </button>
-
     </div>
+  </header>
 
-  </div>
-</header>
+  <main class="news-main">
+    <header class="news-header">
+      <p class="eyebrow">Recent engineering</p>
+      <h1>Latest projects</h1>
+    </header>
 
-  <main>
-    <div></div><p style="padding-left:29px;padding-top:10px;">June 15, 2026</p></div>
-    <section class="hero">
-
-  <div class="panel">
-
-    <p class="eyebrow">Upcoming Seminar - University of Colorado (JILA) June 18</p>
-
-    <h1>
-      All-mechanical coherence protection and fast control of a spin qubit
-    </h1>
-
-    <p class="lead">
-      Continuous mechanical driving protects silicon-vacancy spin qubits
-      from low-frequency noise while remaining compatible with phononic
-      cavities. The work demonstrates ultrafast mechanical control and
-      points toward robust phonon-mediated quantum networks.
-    </p>
-
-    <div class="tag-row" aria-label="Seminar topics">
-      <span class="tag">JILA</span>
-      <span class="tag">SiV Centers</span>
-      <span class="tag">Mechanical Control</span>
-      <span class="tag">Quantum Networks</span>
-    </div>
-
-    <div class="hero-actions">
-      <a
-        class="button primary"
-        href="https://labreports.app/2508-13356/"
-      >
-        My Lab Report
-      </a>
-
-      <a
-        class="button accent"
-        href="https://arxiv.org/abs/2508.13356"
-      >
-        Their arXiv
-      </a>
-
-      <a
-        class="button"
-        href="https://github.com/thinkthoughts/all-mechanical-coherence"
-      >
-        My Corresponding GitHub Repo
-      </a>
-    </div>
-
-  </div>
-
-  <aside class="panel qr-panel" aria-label="QR code panel">
-
-    <div>
-
-      <p class="eyebrow">QR Code</p>
-
-      <h2>Scan this page</h2>
-
-      <p class="small">
-        Engineering statements with scientific intent.
-      </p>
-
-    </div>
-
-    <div class="qr-box">
-
-      <img
-        alt="QR code for danhawkley.dev"
-        src="https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=https%3A%2F%2Fdanhawkley.dev"
-      />
-
-    </div>
-
-    <code>
-      https://danhawkley.dev
-    </code>
-
-  </aside>
-
-</section>
-    
-    
-    <section class="section">
-      <p class="eyebrow">Timeline</p>
-    
-      <div class="timeline">
-        <div class="timeline-item">
-          <strong>Now</strong>
-          <p>Published a lab report, updated a repo, or added a project page.</p>
-        </div>
-        <div class="timeline-item">
-          <strong>Next</strong>
-          <p>Refine the repo inventory and connect project pages to live demos.</p>
-        </div>
-        <div class="timeline-item">
-          <strong>Archive</strong>
-          <p>Load a poem, infographic, notebook, or embedded video from content blocks.</p>
-        </div>
-      </div>
-    </section>
-    <!--<section class="timeline-section">
-  <p class="eyebrow">Timeline</p>
-  <h2>Recent work</h2>
-
-  <ol class="timeline">
-    <li>
-      <time datetime="2026-06-15">2026-06-15</time>
-      <p>Updated danhawkley.dev with seminar preview, QR panel, and dashboard links.</p>
-    </li>
-
-    <li>
-      <time datetime="2026-06-15">2026-06-15</time>
-      <p>Applied for Computational Scientist role at Continuum.</p>
-    </li>
-
-    <li>
-      <time datetime="2026-06-14">2026-06-14</time>
-      <p>Published all-mechanical-coherence lab report and repo.</p>
-    </li>
-  </ol>
-</section>-->
-    
-    <section id="active" class="section">
-      <div class="section-header">
-        <div>
-          <p class="eyebrow">Active Intelligence</p>
-          <h2>Engineering Statements (Feed)</h2>
-        </div>
-      </div>
-
-      <div class="grid">
-        <article class="card">
-          <h3>Active Repos</h3>
-          <p>
-           Repositories
-          </p>
-          <a href="https://github.com/thinkthoughts">github.com/thinkthoughts →</a>
-        </article>
-
-        <article class="card">
-          <h3>Active Sites</h3>
-          <p>
-            Climate reality lab reports.
-          </p>
-          <a href="https://climatereality.app">View climatereality.app →</a>
-        </article>
-
-        <article class="card">
-          <h3>Active Lifestyle</h3>
-          <p>
-            Initializing danhawkley.dev as dashboard and outreach.
-          </p>
-          <a href="https://danhawkley.dev">This →</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-header">
-        <div>
-          <p class="eyebrow">Actual Intelligence</p>
-          <h2>Scientific Intent</h2>
-        </div>
-      </div>
-
-
-<div class="grid two">
-
-  <section class="panel papers-panel">
-
-    <p class="eyebrow">My Papers</p>
-
-    <div class="paper-list">
-
-      <a
-        class="paper-card"
-        href="https://goodmath.app/persist.pdf"
-      >
-        A Persistent 24/25 Constant in Primorial-Constrained Residue Counts and a 9423 Phase-Lock Representation
-      </a>
-
-      <!--
-      <a class="paper-card" href="#">
-        Another paper title goes here...
-      </a>
-      -->
-
-    </div>
-
-  </section>
-
-  <section class="panel equations-panel">
-
-    <p class="eyebrow">Equations / Constraints</p>
-
-    <h2>Working identities</h2>
-
-    <div class="equation-list">
-
-      <div class="equation-card">
-        \[
-          1 + 1 > |1.4i| \ne \$0.96
-        \]
-      </div>
-
-      <div class="equation-card">
-        \[
-          \text{Triplet}_N = (\text{Spiral}_N \times 24) - (25 = 5 \times 5)
-        \]
-      </div>
-
-      <div class="equation-card">
-        \[
-          c = \sqrt{\frac{E}{m}}
-        \]
-      </div>
-
-      <div class="equation-card">
-        \[
-          24/25 = 1 - \frac{1}{5^2}
-        \]
-      </div>
-
-      <div class="equation-card">
-        \[
-          \{1,7,11,13,17,19,23,29\} \pmod{30}
-        \]
-      </div>
-
-      <div class="equation-card">
-        \[
-          9423\pi \rightarrow 9425\pi \rightarrow 9426\pi \rightarrow 9427\pi
-        \]
-      </div>
-
-    </div>
-
-  </section>
-
-</div>
-
-    <section class="section">
-      <div class="section-header">
-        <div>
-          <p class="eyebrow">Data</p>
-          <h2>Active repo shortcuts</h2>
-        </div>
-      </div>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Repo</th>
-            <th>Category</th>
-            <th>Minimal blurb</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a href="https://github.com/thinkthoughts/accurate-intelligence">accurate-intelligence</a></td>
-            <td>Research Systems</td>
-            <td>Generate lab reports, infographics, and structured artifacts from papers.</td>
-          </tr>
-          <tr>
-            <td><a href="https://github.com/thinkthoughts/mod30-residue-lanes">mod30-residue-lanes</a></td>
-            <td>Experimental Mathematics</td>
-            <td>Admissible residue lanes modulo 30 with notebooks and figures.</td>
-          </tr>
-          <tr>
-            <td><a href="https://github.com/thinkthoughts/climate-reality-app">climate-reality-app</a></td>
-            <td>Public Communication</td>
-            <td>Climate Reality site, statements, and science communication pages.</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section class="section">
-      <div class="section-header">
-        <div>
-          <p class="eyebrow">Code of Contact</p>
-          <h2>Command block</h2>
-        </div>
-      </div>
-
-      <pre><code>
-git pull
-sudo nginx -t
-sudo systemctl reload nginx
-text dan
- _            _      _____  ___ _____      _________   ___         ___  ___ _____ ___  
-| |_ _____  _| |_   |___ / / _ \___ /     |___ / ___| / _ \       ( _ )/ _ \___ // _ \ 
-| __/ _ \ \/ / __|    |_ \| | | ||_ \ _____ |_ \___ \| | | |_____ / _ \ (_) ||_ \ (_) |
-| ||  __/>  <| |_    ___) | |_| |__) |_____|__) |__) | |_| |_____| (_) \__, |__) \__, |
- \__\___/_/\_\\__|  |____/ \___/____/     |____/____/ \___/       \___/  /_/____/  /_/ 
-                                                                                       
-      </code></pre>
+    <section
+      id="latest-projects"
+      class="project-feed"
+      aria-live="polite"
+      aria-busy="true"
+    >
+      <p class="feed-message">Loading recent engineering objects…</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div>
-        <strong>Dan Hawkley</strong>
-        <p class="small">Active intelligence engineering statements with scientific intent.</p>
-      </div>
+      <p>Admissible generalizations trail leading specifications.</p>
     </div>
   </footer>
-
-  <script>
-    const toggle = document.getElementById('theme-toggle');
-    const savedTheme = localStorage.getItem('theme');
-
-    function setToggleText() {
-      const isDark = document.body.classList.contains('dark-mode');
-      toggle.textContent = isDark ? '☀️ Light' : '🌙 Dark';
-    }
-
-    if (savedTheme === 'dark') {
-      document.body.classList.add('dark-mode');
-    }
-
-    setToggleText();
-
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      const isDark = document.body.classList.contains('dark-mode');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      setToggleText();
-    });
-  </script>
 </body>
 </html>

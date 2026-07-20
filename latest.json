@@ -1,0 +1,38 @@
+[
+  {
+    "id": "specification-grammar",
+    "title": "Specification Grammar",
+    "timestamp": "2026-07-20T18:42:00Z",
+    "primary_group": "Engineering",
+    "object_type": "reference-standard",
+    "status": "ready",
+    "status_symbol": "🟢",
+    "status_label": "Ready",
+    "engineering_statement": {
+      "text": "Leading specifications specify engineering objects.",
+      "url": "https://github.com/thinkthoughts/engineering-statements/blob/main/statements/specification-grammar.yaml"
+    },
+    "summary": "A reusable engineering reference plate connecting leading specifications, engineering objects, engineering variables, observable states, measured states, and admissible generalizations.",
+    "repository": {
+      "name": "thinkthoughts/specification-grammar",
+      "release": "v1.0.0",
+      "url": "https://github.com/thinkthoughts/specification-grammar"
+    },
+    "primary_url": "https://github.com/thinkthoughts/specification-grammar",
+    "image": {
+      "url": "https://raw.githubusercontent.com/thinkthoughts/specification-grammar/main/exports/specification-grammar-3200.png",
+      "alt": "Specification Grammar reference plate showing five relationships from leading specifications through measured states."
+    },
+    "targets": {
+      "danhawkley.dev": true,
+      "labreports.app": true,
+      "github": true
+    },
+    "tags": [
+      "engineering",
+      "reference-standard",
+      "specification",
+      "notebook-00"
+    ]
+  }
+]
