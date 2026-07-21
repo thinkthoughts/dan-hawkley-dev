@@ -113,6 +113,60 @@
   padding: 28px 0;
 }
 
+.homepage-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.homepage-title-row h1 {
+  margin: 0;
+}
+
+.homepage-badge-rail {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex: 0 0 auto;
+}
+
+.homepage-badge-link {
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+
+.homepage-badge {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.homepage-badge-link:hover {
+  transform: scale(1.04);
+}
+
+.homepage-badge-link:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (max-width: 640px) {
+  .homepage-title-row {
+    gap: 0.75rem;
+  }
+
+  .homepage-badge-link {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+}
+
 .site-footer .footer-inner {
   justify-content: center;
   text-align: center;
