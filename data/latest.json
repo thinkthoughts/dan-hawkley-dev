@@ -37,5 +37,41 @@
       "specification",
       "notebook-00"
     ]
+  },
+  {
+    "id": "3TH",
+    "title": "Think Before You Act",
+    "abbreviation": "3TH",
+    "timestamp": "2026-07-20T18:30:00Z",
+    "primary_group": "Memorization",
+    "object_type": "translation-object",
+    "status": "developing",
+    "status_symbol": "🟡",
+    "status_label": "Developing",
+    "engineering_statement": {
+      "text": "Writing practice specifies durable recall."
+    },
+    "summary": "三思而后行。Learn to recognize, pronounce, write, understand, recall, and appropriately use the phrase: think carefully before acting.",
+    "primary_url": "/shorts/3TH/",
+    "badge": {
+      "url": "/images/badges/3TH.png"
+    },
+    "image": {
+      "url": "/images/shorts/3TH-stroke-order.png",
+      "alt": "Stroke-order learning plate for writing the Chinese phrase 三思而后行."
+    },
+    "targets": {
+      "danhawkley.dev": true,
+      "labreports.app": false,
+      "github": false
+    },
+    "tags": [
+      "memorization",
+      "shorts",
+      "Chinese",
+      "writing",
+      "pronunciation",
+      "Analects"
+    ]
   }
 ]
