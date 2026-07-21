@@ -1,89 +1,94 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Repository Map | Dan Hawkley</title>
+  <title>Dan Hawkley</title>
 
   <meta
     name="description"
-    content="A map of active operating repositories, reference structures, and engineering evidence."
+    content="Recent engineering objects, statements, repositories, and reports by Dan Hawkley."
   >
 
   <link rel="stylesheet" href="/styles/site.css">
+  <link rel="stylesheet" href="/styles/news.css">
 
-  <script defer src="/js/repo.js"></script>
+  <script defer src="/js/site-builder.js"></script>
 </head>
 
 <body>
   <header class="site-header">
-    <nav class="site-nav" aria-label="Primary navigation">
-      <a class="site-brand" href="/">danhawkley.dev</a>
+    <div class="header-inner">
+      <div class="brand">
+        <div class="avatar-links" aria-label="Featured links">
+          
 
-      <div class="nav-links">
-        <a href="/engineering/">Engineering</a>
-        <a href="/roadmap/">Roadmap</a>
-        <a href="/repos/" aria-current="page">Repositories</a>
-        <a href="/reports/">Reports</a>
+          <a href="https://danhawkley.dev" aria-label="Dan Hawkley home">
+            <img
+              src="/images/badges/avatar.jpg"
+              alt="Dan Hawkley near Boulder"
+              class="avatar"
+            >
+          </a>
+          
+          <a href="https://SG.html" aria-label="Specification Grammar">
+            <img
+              src="/images/badges/SG.png"
+              alt="Specification Grammar"
+              class="avatar"
+            >
+          </a>
+          
+          <a href="https://climatereality.app" aria-label="Climate Reality">
+            <img
+              src="/images/badges/avatar3.jpg"
+              alt="Grandma Physics"
+              class="avatar"
+            >
+          </a>
 
-        <button
-          class="theme-toggle"
-          type="button"
-          data-theme-toggle
-          aria-label="Toggle color theme"
-        >
-          Theme
-        </button>
+          <a href="/style.html" aria-label="Style and studio">
+            <img
+              src="/images/badges/avatar2.jpg"
+              alt="Landyachtz"
+              class="avatar"
+            >
+          </a>
+        </div>
       </div>
-    </nav>
+
+      <button
+        id="theme-toggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="Toggle dark mode"
+        aria-pressed="false"
+      >
+        🌙 Dark
+      </button>
+    </div>
   </header>
 
-  <main class="site-main">
-    <header class="page-header">
-      <p class="eyebrow">Inventory</p>
-      <h1>Repository Map</h1>
-
-      <p class="page-introduction">
-        Active operating repositories locate roadmaps, collaborations,
-        reference structures, and engineering evidence.
-      </p>
+  <main class="news-main">
+    <header class="news-header">
+      <p class="eyebrow">Engineering</p>
     </header>
 
     <section
-      class="repository-controls"
-      aria-label="Repository filters"
-    >
-      <label for="repository-search">Search repositories</label>
-
-      <input
-        id="repository-search"
-        type="search"
-        placeholder="Search names, descriptions, badges, or domains"
-        autocomplete="off"
-        data-repository-search
-      >
-    </section>
-
-    <div
-      class="repository-map"
-      data-repositories-root
+      id="latest-projects"
+      class="project-feed"
       aria-live="polite"
       aria-busy="true"
     >
-      <p class="page-status">Loading repository map…</p>
-
-      <noscript>
-        <p>
-          JavaScript is required to build the repository map from
-          <code>/data/repos.json</code>.
-        </p>
-      </noscript>
-    </div>
+      <p class="feed-message">Loading recent engineering objects…</p>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <p>Admissible generalizations trail leading specifications.</p>
+    <div class="footer-inner">
+      <p>Admissible generalizations trail leading specifications.</p>
+    </div>
   </footer>
 </body>
 </html>
