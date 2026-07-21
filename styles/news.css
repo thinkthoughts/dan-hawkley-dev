@@ -161,6 +161,9 @@ body.dark-mode .project-card {
 body.dark-mode .project-image-link {
   background: #111827;
 }
+body.dark-mode .project-image {
+   border: none;
+}
 
 @media (max-width: 900px) {
   .project-card {
