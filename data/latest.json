@@ -19,6 +19,9 @@
       "url": "https://github.com/thinkthoughts/specification-grammar"
     },
     "primary_url": "https://github.com/thinkthoughts/specification-grammar",
+    "badge": {
+      "url": "/images/badges/SG.png"
+    },
     "image": {
       "url": "https://raw.githubusercontent.com/thinkthoughts/specification-grammar/main/exports/specification-grammar-3200.png",
       "alt": "Specification Grammar reference plate showing five relationships from leading specifications through measured states."
