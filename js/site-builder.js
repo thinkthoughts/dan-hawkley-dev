@@ -2,6 +2,9 @@
   const FEED_URL = "/data/latest.json";
   const feed = document.getElementById("latest-projects");
   const toggle = document.getElementById("theme-toggle");
+  const homepageTitle =
+  document.getElementById("homepage-title") ||
+  document.querySelector("main h1");
 
   function setTheme(theme) {
     const dark = theme === "dark";
@@ -30,6 +33,45 @@
   function externalLink(url, label, className = "button") {
     if (!url) return "";
     return `<a class="${className}" href="${url}" rel="noopener noreferrer">${label}</a>`;
+  }
+  function renderHomepageBadges(projects) {
+    if (!homepageTitle) return;
+  
+    const badgeProjects = projects.filter(project => project.badge?.url);
+    if (!badgeProjects.length) return;
+  
+    let titleRow = homepageTitle.closest(".homepage-title-row");
+  
+    if (!titleRow) {
+      titleRow = document.createElement("div");
+      titleRow.className = "homepage-title-row";
+      homepageTitle.parentNode.insertBefore(titleRow, homepageTitle);
+      titleRow.appendChild(homepageTitle);
+    }
+  
+    let badgeRail = titleRow.querySelector(".homepage-badge-rail");
+  
+    if (!badgeRail) {
+      badgeRail = document.createElement("div");
+      badgeRail.className = "homepage-badge-rail";
+      titleRow.insertBefore(badgeRail, homepageTitle);
+    }
+  
+    badgeRail.innerHTML = badgeProjects.map(project => `
+      <a
+        class="homepage-badge-link"
+        href="${project.primary_url || project.repository?.url || "#"}"
+        aria-label="${project.title}"
+      >
+        <img
+          class="homepage-badge"
+          src="${project.badge.url}"
+          alt="${project.title} badge"
+          width="72"
+          height="72"
+        >
+      </a>
+    `).join("");
   }
 
   function renderProject(project, index) {
@@ -99,6 +141,7 @@
       }
 
       projects.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+      renderHomepageBadges(projects);
 
       feed.innerHTML = projects.length
         ? projects.map(renderProject).join("")
