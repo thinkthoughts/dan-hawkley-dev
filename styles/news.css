@@ -2,7 +2,7 @@
    Loaded after the existing site.css so the current avatar and theme styles remain available. */
 
 .news-main {
-  width: min(1120px, calc(100% - 32px));
+  width: min(1280px, calc(100% - 32px));
   margin: 0 auto;
   padding: 44px 0 72px;
 }
@@ -35,7 +35,10 @@
 
 .project-card {
   display: grid;
-  grid-template-columns: minmax(220px, 0.9fr) minmax(0, 1.25fr);
+
+  /* Image receives the majority of the desktop width. */
+  grid-template-columns: minmax(0, 1.8fr) minmax(280px, 0.8fr);
+
   overflow: hidden;
   border: 1px solid var(--border, rgba(8, 29, 79, 0.18));
   border-radius: 24px;
@@ -47,21 +50,30 @@
 }
 
 .project-image-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
   min-height: 100%;
+  padding: 20px;
   background: var(--surface, #f6f6f4);
 }
 
 .project-image {
+  display: block;
   width: 100%;
   height: 100%;
-  min-height: 320px;
-  object-fit: cover;
+  min-height: 360px;
+
+  /* Show the complete reference plate instead of cropping its sides. */
+  object-fit: contain;
+  object-position: center;
 }
 
 .project-body {
   align-self: center;
-  padding: clamp(24px, 5vw, 52px);
+  min-width: 0;
+  padding: clamp(24px, 3.5vw, 42px);
 }
 
 .project-meta {
@@ -69,7 +81,7 @@
   flex-wrap: wrap;
   gap: 8px 16px;
   margin-bottom: 18px;
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   opacity: 0.78;
 }
 
@@ -77,16 +89,32 @@
   font-weight: 700;
 }
 
+.project-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.project-title-row h2,
 .project-card h2 {
   margin: 0;
-  font-size: clamp(1.8rem, 4vw, 3.25rem);
-  line-height: 1.05;
+  font-size: clamp(1.5rem, 2.4vw, 2.35rem);
+  line-height: 1.08;
+}
+
+.project-badge {
+  display: block;
+  width: 3.75rem;
+  height: 3.75rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .engineering-statement {
-  margin: 20px 0 0;
+  margin: 18px 0 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-size: clamp(1.02rem, 1.4vw, 1.22rem);
   line-height: 1.45;
 }
 
@@ -97,74 +125,21 @@
 }
 
 .project-summary {
-  max-width: 62ch;
-  margin: 18px 0 0;
-  line-height: 1.65;
+  max-width: 42ch;
+  margin: 16px 0 0;
+  font-size: 0.97rem;
+  line-height: 1.6;
 }
 
 .project-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 24px;
+  margin-top: 22px;
 }
 
 .feed-message {
   padding: 28px 0;
-}
-
-.homepage-title-row {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.homepage-title-row h1 {
-  margin: 0;
-}
-
-.homepage-badge-rail {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  flex: 0 0 auto;
-}
-
-.homepage-badge-link {
-  display: block;
-  width: 4.5rem;
-  height: 4.5rem;
-  overflow: hidden;
-  border-radius: 50%;
-  flex: 0 0 auto;
-}
-
-.homepage-badge {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.homepage-badge-link:hover {
-  transform: scale(1.04);
-}
-
-.homepage-badge-link:focus-visible {
-  outline: 3px solid currentColor;
-  outline-offset: 4px;
-}
-
-@media (max-width: 640px) {
-  .homepage-title-row {
-    gap: 0.75rem;
-  }
-
-  .homepage-badge-link {
-    width: 3.75rem;
-    height: 3.75rem;
-  }
 }
 
 .site-footer .footer-inner {
@@ -186,6 +161,20 @@ body.dark-mode .project-image-link {
   background: #111827;
 }
 
+@media (max-width: 900px) {
+  .project-card {
+    grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.9fr);
+  }
+
+  .project-image-link {
+    padding: 14px;
+  }
+
+  .project-body {
+    padding: 28px;
+  }
+}
+
 @media (max-width: 760px) {
   .project-card {
     grid-template-columns: 1fr;
@@ -195,8 +184,26 @@ body.dark-mode .project-image-link {
     min-height: 0;
   }
 
+  .project-image-link {
+    padding: 0;
+  }
+
   .project-image {
     min-height: 0;
     aspect-ratio: 3 / 2;
+    object-fit: cover;
+  }
+
+  .project-body {
+    padding: 24px;
+  }
+
+  .project-title-row h2,
+  .project-card h2 {
+    font-size: clamp(1.7rem, 8vw, 2.4rem);
+  }
+
+  .project-summary {
+    max-width: 62ch;
   }
 }
