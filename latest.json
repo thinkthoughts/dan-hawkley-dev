@@ -34,5 +34,46 @@
       "specification",
       "notebook-00"
     ]
+  },
+  {
+    "id": "3TH",
+    "title": "Think Before You Act",
+    "abbreviation": "3TH",
+    "timestamp": "2026-07-20T20:30:00Z",
+    "primary_group": "Shorts",
+    "object_type": "translation-object",
+    "status": "ready",
+    "status_symbol": "🟢",
+    "status_label": "Ready",
+  
+    "engineering_statement": {
+      "text": "Recognized situations specify appropriate recall."
+    },
+  
+    "summary": "三思而后行 (Sānsī ér hòu xíng). Learn the phrase, pronunciation, writing, meaning, practical use, and situations where it naturally comes to mind.",
+  
+    "primary_url": "/shorts/3TH/",
+  
+    "badge": {
+      "url": "/images/badges/3TH.png"
+    },
+  
+    "image": {
+      "url": "/images/shorts/3TH.png",
+      "alt": "Think Before You Act learning object."
+    },
+  
+    "targets": {
+      "danhawkley.dev": true,
+      "github": true
+    },
+  
+    "tags": [
+      "shorts",
+      "translation",
+      "memorization",
+      "chinese",
+      "analects"
+    ]
   }
 ]
