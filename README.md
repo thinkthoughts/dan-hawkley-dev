@@ -1,20 +1,52 @@
-# danhawkley.dev news homepage
+# Specification Grammar for danhawkley.dev
 
-A minimal, JSON-built homepage focused on recent engineering objects.
+This project applies the Specification Grammar reference standard to active engineering practice.
 
-## Files
+The purpose of danhawkley.dev is to develop engineering projects through reference standards, roadmaps, engineering objects, measurable states, and documented evidence.
 
-- `index.html`
-- `js/site-builder.js`
-- `data/latest.json`
-- `styles/news.css`
+Engineering projects develop through:
 
-The existing `/styles/site.css` remains in use so the current site-wide design,
-avatar treatment, and dark-mode variables can continue to work.
+- context
+- objectives
+- engineering objects
+- measurable states
 
-## Publish
+Measured states inform admissible generalizations about demonstrated engineering practice.
 
-Copy these files into the matching paths in the `danhawkley.dev` repository.
+Current projects include the application of the Specification Grammar reference standard to:
 
-Serve through HTTP/HTTPS rather than opening `index.html` directly, because
-the browser must fetch `/data/latest.json`.
+- repositories
+- job descriptions
+- lab reports
+- arXiv papers
+- seminars
+- collaborations
+
+The objective is to develop reusable engineering practice rather than isolated engineering artifacts.
+
+---
+
+## Engineering Practice
+
+Within 24 hours of a frontier research presentation, I can produce:
+
+- an engineering assessment
+- a prototype implementation plan
+- a reference architecture
+- communication assets suitable for technical and executive audiences
+
+The same engineering workflow is applied to research papers, seminars, engineering projects, and published job descriptions.
+
+---
+
+## Current Engineering Focus
+
+Current engineering projects include:
+
+- Specification Grammar
+- Tribe AI Engineer
+- Lab Reports
+- Repository Inventory
+- Engineering Roadmaps
+
+Each project develops through measurable engineering objects, documented evidence, and continuing laboratory practice.
