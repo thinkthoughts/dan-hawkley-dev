@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leo A Worksheet</title>
+  <style>
+    @page { size: letter portrait; margin: .45in; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #111; font: 12pt/1.3 Georgia, serif; }
+    h1 { margin: 0; font: 700 34pt/1 system-ui, sans-serif; }
+    h2 { margin: 0 0 8px; font: 700 11pt/1.2 system-ui, sans-serif; text-transform: uppercase; letter-spacing: .08em; }
+    p { margin: 0; }
+    .top { display: flex; justify-content: space-between; align-items: end; border-bottom: 2px solid #111; padding-bottom: 10px; }
+    .deadline { font: 700 14pt system-ui, sans-serif; }
+    .cue-line { margin: 14px 0; font: 15pt system-ui, sans-serif; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .box { border: 1px solid #111; padding: 10px; min-height: 120px; }
+    .line { border-bottom: 1px solid #777; min-height: 25px; margin-top: 5px; }
+    .wide { grid-column: 1 / -1; }
+    .drawing { min-height: 260px; }
+    .footer { margin-top: 10px; display: flex; justify-content: space-between; font: 9pt system-ui, sans-serif; }
+    @media print { .no-print { display: none; } }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div>
+      <p>Lifestyle Calendar</p>
+      <h1>Leo A</h1>
+    </div>
+    <p class="deadline">Aug 30</p>
+  </div>
+
+  <p class="cue-line">Moon phase __________ · __________ mode · Prayer ____ · Reading Point __________</p>
+
+  <div class="grid">
+    <section class="box">
+      <h2>Boulder observations</h2>
+      <p>Sunrise <span class="line"></span></p>
+      <p>Sunset <span class="line"></span></p>
+      <p>Moon <span class="line"></span></p>
+      <p>Weather / AQI <span class="line"></span></p>
+      <p>Weight <span class="line"></span></p>
+    </section>
+
+    <section class="box">
+      <h2>Memory</h2>
+      <p>Memorize <span class="line"></span></p>
+      <p>Reviewed <span class="line"></span></p>
+      <p>Canonical cue <span class="line"></span></p>
+    </section>
+
+    <section class="box wide">
+      <h2>Active projects · planned increments</h2>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </section>
+
+    <section class="box wide drawing">
+      <h2>Leo A drawing piece</h2>
+      <p>Piece ____ / 30 · source grid position __________</p>
+    </section>
+  </div>
+
+  <div class="footer">
+    <span>Front: worksheet · Back: drawing piece</span>
+    <span>An organization of cues.</span>
+  </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "cues": [
+    {"id":"leo-a","label":"Leo A","type":"period","orientation":"finish"},
+    {"id":"breakfast","label":"Breakfast","type":"session","orientation":"begin"},
+    {"id":"lunch","label":"Lunch","type":"session","orientation":"continue"},
+    {"id":"dinner","label":"Dinner","type":"session","orientation":"wind down"},
+    {"id":"prayer-z","label":"Prayer Z","type":"session","orientation":"orient"},
+    {"id":"prayer-a","label":"Prayer A","type":"session","orientation":"recall"},
+    {"id":"prayer-b","label":"Prayer B","type":"session","orientation":"advance"},
+    {"id":"prayer-c","label":"Prayer C","type":"session","orientation":"record"},
+    {"id":"prayer-d","label":"Prayer D","type":"session","orientation":"de-escalate"},
+    {"id":"reading-point","label":"Reading Point","type":"social","orientation":"read cues and invitations"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "leo-a",
+  "name": "Leo A",
+  "start": "2026-07-31",
+  "end": "2026-08-30",
+  "visible_deadline": "Aug 30",
+  "next_period": "virgo-a",
+  "status": "active",
+  "purpose": "Carry active efforts through days and weeks toward finished work.",
+  "location": {
+    "name": "Boulder, Colorado",
+    "timezone": "America/Denver"
+  },
+  "projects": [
+    "leo-a-worksheet-drawing",
+    "leo-a-lifestyle-calendar"
+  ]
+}

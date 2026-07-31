@@ -1,0 +1,13 @@
+{
+  "id": "leo-a-lifestyle-calendar",
+  "name": "Lifestyle Calendar Prototype",
+  "target_period": "leo-a",
+  "completed_period": null,
+  "status": "active",
+  "object": "A curated index page and JSON-backed scaffold for organizing cues, observations, memory, projects, sessions, and invitations.",
+  "daily_increment": {
+    "amount": 1,
+    "unit": "useful refinement"
+  },
+  "finish_definition": "The prototype can display the current period, cues, projects, and worksheet links from stable JSON data."
+}

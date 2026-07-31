@@ -1,0 +1,21 @@
+{
+  "id": "leo-a-worksheet-drawing",
+  "name": "Worksheet / Drawing",
+  "target_period": "leo-a",
+  "completed_period": null,
+  "status": "active",
+  "object": "One rectangular drawing assembled from thirty two-sided daily worksheets or index cards.",
+  "source_photo": null,
+  "format": {
+    "piece_count": 30,
+    "piece_type": "paper sheet or index card",
+    "layout": null,
+    "front": "lifestyle worksheet",
+    "back": "drawing tile"
+  },
+  "daily_increment": {
+    "amount": 1,
+    "unit": "piece"
+  },
+  "finish_definition": "All pieces are drawn, assembled, and documented by the Leo A completion horizon."
+}

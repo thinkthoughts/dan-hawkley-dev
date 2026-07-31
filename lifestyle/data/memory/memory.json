@@ -1,0 +1,15 @@
+{
+  "memorize": [],
+  "memorized": [
+    {
+      "id": "quote-moon-clumsy-boots",
+      "type": "quote",
+      "text": "Moon, I am clumsy in these boots.",
+      "canonical": true,
+      "activation": {
+        "event": "moonrise",
+        "window_minutes_after": 60
+      }
+    }
+  ]
+}

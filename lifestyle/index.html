@@ -1,1 +1,84 @@
-<html></html>
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lifestyle Calendar | Dan Hawkley</title>
+  <meta name="description" content="An organization of cues for observations, sessions, memory, projects, and invitations.">
+  <link rel="stylesheet" href="./styles/lifestyle.css">
+  <script defer src="./js/lifestyle.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">danhawkley.dev</a>
+    <nav aria-label="Lifestyle navigation">
+      <a href="./index.html" aria-current="page">Lifestyle</a>
+      <a href="./print/worksheet.html">Worksheet</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Lifestyle Calendar</p>
+      <h1 id="page-title">Leo A</h1>
+      <p class="period-line"><span id="moon-phase">Moon phase</span> · <span id="meal-cue">Breakfast</span> · <span id="prayer-cue">Prayer Z</span></p>
+      <p class="reading-point">Reading Point <span aria-hidden="true">←</span> <strong>Leading Specifications</strong></p>
+      <p class="deadline">Aug 30</p>
+    </section>
+
+    <section class="cue-grid" aria-label="Current cues">
+      <article>
+        <p class="label">Orientation</p>
+        <p id="orientation">Begin</p>
+      </article>
+      <article>
+        <p class="label">Invitation</p>
+        <p id="invitation">Return to what belongs to Leo A.</p>
+      </article>
+      <article>
+        <p class="label">Memory</p>
+        <p id="memory-cue">Current memorization</p>
+      </article>
+      <article>
+        <p class="label">Observation</p>
+        <p id="observation-cue">Boulder sky</p>
+      </article>
+    </section>
+
+    <section class="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <h2 id="projects-title">Leo A projects</h2>
+        <a href="./data/periods/leo-a.json">Period data</a>
+      </div>
+
+      <div id="project-list" class="project-list">
+        <article class="project-card">
+          <p class="project-period">Leo A</p>
+          <h3>Worksheet / Drawing</h3>
+          <p>Thirty two-sided sheets or index cards become one finished rectangular drawing.</p>
+          <p class="project-increment">Daily increment: one page, tile, or card.</p>
+        </article>
+
+        <article class="project-card">
+          <p class="project-period">Leo A</p>
+          <h3>Lifestyle Calendar Prototype</h3>
+          <p>Build the first curated reading point at <code>/lifestyle/</code>.</p>
+          <p class="project-increment">Daily increment: one useful refinement.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="today" aria-labelledby="today-title">
+      <div class="section-heading">
+        <h2 id="today-title">Current worksheet</h2>
+        <a href="./print/worksheet.html">Print worksheet</a>
+      </div>
+      <p>The full Gregorian date remains in the daily JSON. This page leads with the current period, cues, observations, projects, and completion horizon.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>An organization of cues.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{
+  "date": "2026-07-31",
+  "period": "leo-a",
+  "location": {
+    "name": "Boulder, Colorado",
+    "timezone": "America/Denver"
+  },
+  "astronomy": {
+    "sunrise": null,
+    "sunset": null,
+    "moonrise": null,
+    "moonset": null,
+    "moon_phase": null,
+    "moon_illumination_percent": null
+  },
+  "environment": {
+    "temperature_high_f": null,
+    "temperature_low_f": null,
+    "air_quality_index": null,
+    "uv_index": null
+  },
+  "personal": {
+    "weight_lb": null
+  },
+  "sessions": {
+    "meal_cue": "breakfast",
+    "prayer_cue": "prayer-z",
+    "reading_point": "home"
+  },
+  "memory": {
+    "memorize": [],
+    "reviewed": [],
+    "active_canonical": []
+  },
+  "projects": [
+    {
+      "project_id": "leo-a-worksheet-drawing",
+      "planned_increment": 1,
+      "completed_increment": 0,
+      "notes": "Choose source photo and decide whether to use full sheets or index cards."
+    },
+    {
+      "project_id": "leo-a-lifestyle-calendar",
+      "planned_increment": 1,
+      "completed_increment": 1,
+      "notes": "Initial scaffold created."
+    }
+  ],
+  "paper": {
+    "printed": false,
+    "completed_by_hand": false,
+    "transcribed": false
+  }
+}
